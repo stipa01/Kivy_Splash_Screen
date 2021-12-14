@@ -1,0 +1,47 @@
+<SplashScreen>:
+    canvas.before:
+        Color:
+            rgba: 0,0,0,.5
+        Rectangle:
+            size: self.size
+            pos: self.pos
+    MDBoxLayout:
+        orientation: 'vertical'
+        padding: 1
+        Label:
+            text: 'Application Title'
+            halign: 'center'
+            valign: 'middle'
+            font_size: 35
+            padding: 5,5
+            bold: True
+            size_y: .2
+        Label:
+            text: 'Application Info goes here...'
+            halign: 'center'
+            valign: 'middle'
+            font_size: 15
+            padding: 5,5
+            bold: 'true'
+            size_y: .2
+        MDProgressBar:
+            id: progress_bar
+            padding: 5,5
+            size_x: .8
+            max: 100
+            value: 5
+        Label:
+            id: progress_bar_label
+            text: 'Loading.. [5 %]'
+            halign: 'center'
+            valign: 'middle'
+            font_size: 12
+            padding: 5,5
+            bold: 'true'
+        Label:
+            text: 'Copyrights information'
+            halign: 'left'
+            valign: 'middle'
+            font_size: 12
+            padding: 5,5
+            bold: 'true'
